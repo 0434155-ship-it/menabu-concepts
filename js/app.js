@@ -55,8 +55,11 @@ function cardHtml(p, layout) {
   if (!p) return "";
   const grams = p.weights.map((w, i) => `<button type="button" class="gram" aria-pressed="${i === 0}" data-price="${w.price}" data-g="${w.g}">${w.g}</button>`).join("");
   const badge = p.hit ? `<span class="badge">хит</span>` : "";
+  const look = p.img
+    ? `<button type="button" class="cut-open" data-src="${p.cut || p.img}" data-alt="${p.alt}" data-name="${p.name}">В разрезе</button>`
+    : "";
   const photoHtml = p.img
-    ? `<div class="photo">${badge}<img src="${p.img}" alt="${p.alt}" ${p.pos ? `style="object-position:${p.pos}"` : ""}></div>`
+    ? `<div class="photo">${badge}${look}<img src="${p.img}" alt="${p.alt}" ${p.pos ? `style="object-position:${p.pos}"` : ""}></div>`
     : `<div class="photo mold-wrap">${badge}<div class="mold" role="img" aria-label="Медная форма канеле"></div></div>`;
   if (layout === "menu") {
     return `<div class="menu-row" data-id="${p.id}">
@@ -281,7 +284,7 @@ function setupLife(root) {
   root.querySelector(".life-pause").addEventListener("click", (e) => {
     const on = e.currentTarget.getAttribute("aria-pressed") === "true";
     e.currentTarget.setAttribute("aria-pressed", String(!on));
-    e.currentTarget.textContent = on ? "Пауза" : "Дальше";
+    e.currentTarget.setAttribute("aria-label", on ? "Пауза" : "Дальше");
     if (on) play(); else clearInterval(timer);
   });
   dots.addEventListener("click", (e) => {
@@ -292,6 +295,19 @@ function setupLife(root) {
 }
 
 document.addEventListener("click", (e) => {
+  const cutBtn = e.target.closest(".cut-open");
+  if (cutBtn) {
+    const dlg = document.getElementById("cut");
+    const img = dlg.querySelector("img");
+    img.src = cutBtn.dataset.src;
+    img.alt = cutBtn.dataset.alt || "";
+    dlg.querySelector("figcaption").textContent = cutBtn.dataset.name || "";
+    img.style.animation = "none";
+    void img.offsetWidth;
+    img.style.animation = "";
+    dlg.showModal();
+    return;
+  }
   const gram = e.target.closest(".gram");
   if (gram) {
     const group = gram.parentElement;
@@ -342,6 +358,10 @@ document.addEventListener("click", (e) => {
 
 document.getElementById("cartBtn").addEventListener("click", openCart);
 document.getElementById("cartClose").addEventListener("click", closeCart);
+document.getElementById("cutClose").addEventListener("click", () => document.getElementById("cut").close());
+document.getElementById("cut").addEventListener("click", (e) => {
+  if (e.target.id === "cut") document.getElementById("cut").close();
+});
 document.getElementById("scrim").addEventListener("click", closeCart);
 document.getElementById("menuBtn").addEventListener("click", () => {
   const nav = document.getElementById("nav");

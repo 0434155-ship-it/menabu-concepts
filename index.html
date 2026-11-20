@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/site.css?v=15">
+<link rel="stylesheet" href="css/site.css?v=18">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%23f3ecdf' width='64' height='64'/%3E%3Cpath d='M8 40c10-16 16-16 24-4 8-12 14-12 24 4' fill='none' stroke='%238f3d34' stroke-width='2'/%3E%3C/svg%3E">
 </head>
 <body>
@@ -150,7 +150,7 @@
       </div>
     </section>
     <section class="life" data-life>
-      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false" aria-label="Пауза"></button></div></div>
       <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
       <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
     </section>
@@ -193,7 +193,7 @@
       </ol>
     </section>
     <section class="life life-wide" data-life>
-      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false" aria-label="Пауза"></button></div></div>
       <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
       <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
     </section>
@@ -238,7 +238,7 @@
       </div>
     </section>
     <section class="life life-polaroid" data-life>
-      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false" aria-label="Пауза"></button></div></div>
       <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
       <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
     </section>
@@ -331,6 +331,7 @@
       </div>
     </div>
     <div class="long-body" id="kadr-next">
+      <a class="preorder-bar" href="#/kadrlong/preorder"><span>Открыт предзаказ новогодних штолленов</span><span>Заказы до 20 декабря</span></a>
       <section class="pick-block">
         <div class="section-head"><h2>Каталог</h2><a href="#/kadrlong/catalog">Все позиции</a></div>
         <div class="picks" data-picks="grech,nas,taiga,croissant,poppy,cube,canele,cheese" data-layout="cards"></div>
@@ -344,13 +345,13 @@
         </div>
       </section>
       <section class="life" data-life>
-        <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+        <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false" aria-label="Пауза"></button></div></div>
         <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
         <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
       </section>
       <figure class="quote quote-person">
         <img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель">
-        <blockquote><p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p></blockquote>
+        <blockquote><p class="eyebrow">Слово основателя</p><p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p></blockquote>
         <figcaption><span>Дмитрий Никитин</span> основатель</figcaption>
       </figure>
       <p class="hours"><span>Пн–пт 8:00–21:00</span><span>Сб 9:00–21:00</span><span>Вс 8:00–21:00</span></p>
@@ -369,18 +370,19 @@
       </div>
     </div>
     <div class="long-body" id="muka-next">
+      <a class="preorder-bar" href="#/mukalong/preorder"><span>Открыт предзаказ новогодних штолленов</span><span>Заказы до 20 декабря</span></a>
       <section class="pick-block">
         <div class="section-head"><h2>С полки</h2><a href="#/mukalong/catalog">Весь каталог</a></div>
         <div class="picks" data-picks="croissant,cube,poppy,canele,tart,cheese,grech,taiga" data-layout="cards"></div>
       </section>
       <section class="life" data-life>
-        <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+        <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false" aria-label="Пауза"></button></div></div>
         <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
         <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
       </section>
       <figure class="quote quote-person">
         <img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель">
-        <blockquote><p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p></blockquote>
+        <blockquote><p class="eyebrow">Слово основателя</p><p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p></blockquote>
         <figcaption><span>Дмитрий Никитин</span> основатель</figcaption>
       </figure>
     </div>
@@ -423,6 +425,16 @@
       <h1>О пекарне</h1>
       <p>Первая и домашняя ремесленная пекарня Мытищ. С 2020 года печём хлеб на закваске, слоёное и то, что хочется поставить на середину стола.</p>
     </header>
+    <section class="story">
+      <figure><img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель пекарни"></figure>
+      <div>
+        <p class="eyebrow">Наша история</p>
+        <h2>Сначала был <em>просто хлеб.</em></h2>
+        <p>Каждую булку мы держим столько, сколько ей нужно. Закваска работает ночь, масло остаётся сливочным, руки не торопят тесто. Хочется, чтобы к этому вкусу возвращались — не по делу, а потому что за столом спокойно.</p>
+        <p>Мы печём для своих: для тех, кто садится рядом и делит хлеб. Так теплее, и так честнее.</p>
+        <p class="story-line">Между нами — больше, чем хлеб.</p>
+      </div>
+    </section>
     <div class="about-grid">
       <figure><img src="assets/real/slice.jpg" alt="Тёмный хлеб в разрезе, с семенами и сухофруктами"></figure>
       <div>
@@ -487,7 +499,8 @@
     <p class="hours"><span>Пн–пт 8:00–21:00</span><span>Сб 9:00–21:00</span><span>Вс 8:00–21:00</span></p>
     <figure class="quote quote-person" id="quote">
       <img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель">
-      <blockquote>
+        <blockquote>
+        <p class="eyebrow">Слово основателя</p>
         <p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p>
       </blockquote>
       <figcaption><span>Дмитрий Никитин</span> основатель</figcaption>
@@ -551,6 +564,14 @@
   <a href="#/kadrlong" data-switch="kadrlong">Кадр · страница</a>
   <a href="#/mukalong" data-switch="mukalong">Мука · страница</a>
 </nav>
+
+<dialog class="cut" id="cut">
+  <button type="button" class="cut-x" id="cutClose">Закрыть</button>
+  <figure>
+    <img alt="">
+    <figcaption></figcaption>
+  </figure>
+</dialog>
 
 <div class="scrim" id="scrim" hidden></div>
 <aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
