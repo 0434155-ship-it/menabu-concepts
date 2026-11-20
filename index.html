@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Между Нами Булочками — Кадр и Мука</title>
+<meta name="description" content="Кадр и Мука: по два варианта сайта пекарни Между Нами Булочками. Шрифт и каталог как в Классике, фото пекарни.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css?v=15">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect fill='%23f3ecdf' width='64' height='64'/%3E%3Cpath d='M8 40c10-16 16-16 24-4 8-12 14-12 24 4' fill='none' stroke='%238f3d34' stroke-width='2'/%3E%3C/svg%3E">
+</head>
+<body>
+<a class="skip" href="#main">К содержанию</a>
+<div id="status" class="visually-hidden" role="status" aria-live="polite"></div>
+
+<header class="plaque" id="plaque" hidden>
+  <a class="logo" id="logoHome" href="#/kadr">
+    <span class="logo-kicker">кафе &amp; пекарня</span>
+    <img class="logo-img" src="assets/real/logo-short.png" alt="Булочками">
+  </a>
+  <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="nav">Меню</button>
+  <nav id="nav" aria-label="Разделы">
+    <a data-page="catalog" href="#/stol/catalog">Каталог</a>
+    <a data-page="food" href="#/stol/food">Еда</a>
+    <a data-page="about" href="#/stol/about">О пекарне</a>
+    <a data-page="business" href="#/stol/business">Для бизнеса</a>
+    <a data-page="contacts" href="#/stol/contacts">Контакты</a>
+  </nav>
+  <button class="cart-btn" id="cartBtn" type="button">
+    Корзина <span id="cartCount">0</span>
+  </button>
+</header>
+
+<main id="main">
+  <section id="board" class="board">
+    <p class="eyebrow">Между Нами Булочками · Мытищи</p>
+    <h1>Десять вариантов.<br><em>Одна пекарня.</em></h1>
+    <p class="lede">Восемь концепций: четыре с историей на главной и четыре с одним фото на весь экран. У Кадра и Муки есть ещё вариант, где каталог идёт сразу следом. Раздел «Еда» — в меню каждого.</p>
+    <div class="board-grid">
+      <p class="board-group">История на главной</p>
+      <a class="board-card" href="#/stol" data-concept="stol">
+        <span class="board-no">01</span>
+        <span class="board-name">Стол</span>
+        <span class="board-line">Домашний стол, много воздуха</span>
+        <span class="mock mock-stol" aria-hidden="true"><i></i><i></i><i></i></span>
+      </a>
+      <a class="board-card" href="#/polka" data-concept="polka">
+        <span class="board-no">02</span>
+        <span class="board-name">Полка</span>
+        <span class="board-line">Идём вдоль витрины</span>
+        <span class="mock mock-polka" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      </a>
+      <a class="board-card" href="#/utro" data-concept="utro">
+        <span class="board-no">03</span>
+        <span class="board-name">Утро</span>
+        <span class="board-line">Мягко, как первый кофе</span>
+        <span class="mock mock-utro" aria-hidden="true"><i></i><i></i></span>
+      </a>
+      <a class="board-card" href="#/pismo" data-concept="pismo">
+        <span class="board-no">04</span>
+        <span class="board-name">Письмо</span>
+        <span class="board-line">Записка от пекаря</span>
+        <span class="mock mock-pismo" aria-hidden="true"><i></i><i></i><i></i></span>
+      </a>
+      <p class="board-group">Одно фото на весь экран</p>
+      <a class="board-card" href="#/kadr" data-concept="kadr">
+        <span class="board-no">05</span>
+        <span class="board-name">Кадр</span>
+        <span class="board-line">Хлеб на тёмном фоне</span>
+        <span class="mock mock-kadr" aria-hidden="true"><i></i></span>
+      </a>
+      <a class="board-card" href="#/bumaga" data-concept="bumaga">
+        <span class="board-no">06</span>
+        <span class="board-name">Бумага</span>
+        <span class="board-line">Слова на крафте, хлеб ниже</span>
+        <span class="mock mock-bumaga" aria-hidden="true"><i></i><i></i></span>
+      </a>
+      <a class="board-card" href="#/muka" data-concept="muka">
+        <span class="board-no">07</span>
+        <span class="board-name">Мука</span>
+        <span class="board-line">Круассаны и сыплющаяся мука</span>
+        <span class="mock mock-muka" aria-hidden="true"><i></i><i></i></span>
+      </a>
+      <a class="board-card" href="#/polya" data-concept="polya">
+        <span class="board-no">08</span>
+        <span class="board-name">Поля</span>
+        <span class="board-line">Снимок в полях, как в раме</span>
+        <span class="mock mock-polya" aria-hidden="true"><i></i></span>
+      </a>
+      <p class="board-group">Всё на одной странице</p>
+      <a class="board-card" href="#/kadrlong" data-concept="kadrlong">
+        <span class="board-no">09</span>
+        <span class="board-name">Кадр</span>
+        <span class="board-line">Каталог сразу следом за кадром</span>
+        <span class="mock mock-kadr" aria-hidden="true"><i></i></span>
+      </a>
+      <a class="board-card" href="#/mukalong" data-concept="mukalong">
+        <span class="board-no">10</span>
+        <span class="board-name">Мука</span>
+        <span class="board-line">Стойка, а ниже каталог и пекарня</span>
+        <span class="mock mock-muka" aria-hidden="true"><i></i><i></i></span>
+      </a>
+    </div>
+  </section>
+
+  <article class="home home-stol" data-home="stol" hidden>
+    <section class="hero">
+      <p class="eyebrow">Мытищи · ремесленная пекарня</p>
+      <h1>Хлеб, которым<br><em>делятся.</em></h1>
+      <p class="lede">Печём так, как зовём к столу: долго, в холоде, руками. Для завтрака в тишине и для тех, кто сел рядом.</p>
+      <p class="hero-actions"><a class="btn" href="#/stol/catalog">Открыть витрину</a></p>
+      <figure class="hero-photo">
+        <img src="assets/fruit.jpg" alt="Круглый хлеб, присыпанный мукой">
+        <a class="seal" href="#/stol/preorder" aria-label="Открыт предзаказ новогодних штолленов, заказы до 20 декабря">
+          <svg class="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="seal-stol" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#seal-stol">ОТКРЫТ ПРЕДЗАКАЗ · ОТКРЫТ ПРЕДЗАКАЗ · </textPath></text></svg>
+          <span class="seal-core">до 20<br>декабря</span>
+        </a>
+      </figure>
+    </section>
+    <a class="preorder-bar" href="#/stol/preorder"><span>Открыт предзаказ новогодних штолленов</span><span>Заказы до 20 декабря</span></a>
+    <section class="stats" data-animate>
+      <p class="rise"><strong data-count="2020">2020</strong><span>год открытия первой пекарни</span></p>
+      <p class="rise"><strong data-count="700" data-suffix="+">700+</strong><span>штолленов на новогодних столах за сезон</span></p>
+      <p class="rise"><strong data-count="1001">1001</strong><span>отзыв на Яндекс Картах, награда «Хорошее место»</span></p>
+    </section>
+    <section class="craft" data-animate>
+      <div class="craft-head rise">
+        <h2>Три вещи, из которых получается хлеб</h2>
+        <p>От 12 часов в холоде — и ни часом меньше.</p>
+        <div class="clock-track" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="craft-grid">
+        <article class="rise">
+          <p class="eyebrow">I · Закваска</p>
+          <h3>fermentum</h3>
+          <p>Дикие дрожжи и молочнокислые бактерии вместо промышленных. Тесто ферментируется в холоде от 12 часов.</p>
+        </article>
+        <article class="rise">
+          <p class="eyebrow">II · Масло</p>
+          <h3>butyrum</h3>
+          <p>Работаем только на качественном голландском сливочном масле 82,5%. Без растительных жиров и консервантов.</p>
+        </article>
+        <article class="rise">
+          <p class="eyebrow">III · Руки</p>
+          <h3>manus</h3>
+          <p>Руки — и есть ремесло. Тесто чувствует ладонь: где его сложить, где дать постоять, где остановиться. Поэтому каждая булка немного своя, и в этом её честность.</p>
+        </article>
+      </div>
+    </section>
+    <section class="life" data-life>
+      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+      <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
+      <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
+    </section>
+    <section class="pick-block">
+      <div class="section-head"><h2>Сейчас на столе</h2><a href="#/stol/catalog">Весь каталог</a></div>
+      <div class="picks" data-picks="grech,taiga,croissant,cheese" data-layout="cards"></div>
+    </section>
+  </article>
+
+  <article class="home home-polka" data-home="polka" hidden>
+    <div class="polka-hero">
+      <div class="polka-copy">
+        <p class="eyebrow">Витрина · Мытищи</p>
+        <h1>С полки —<br>к вашему столу.</h1>
+        <p class="lede">Ещё тёплым. Граммовку выбираете здесь же, не уходя вглубь сайта.</p>
+        <a class="seal" href="#/polka/preorder" aria-label="Открыт предзаказ новогодних штолленов, заказы до 20 декабря">
+          <svg class="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="seal-polka" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#seal-polka">ОТКРЫТ ПРЕДЗАКАЗ · ОТКРЫТ ПРЕДЗАКАЗ · </textPath></text></svg>
+          <span class="seal-core">до 20<br>декабря</span>
+        </a>
+      </div>
+      <div class="shelf picks" data-picks="grech,nas,taiga,croissant,poppy,cube" data-layout="shelf" tabindex="0" aria-label="Полка с выпечкой, листается вбок"></div>
+    </div>
+    <a class="preorder-bar" href="#/polka/preorder"><span>Открыт предзаказ новогодних штолленов</span><span>Заказы до 20 декабря</span></a>
+    <section class="stats stats-line" data-animate>
+      <p class="rise"><strong data-count="2020">2020</strong><span>первая пекарня</span></p>
+      <p class="rise"><strong data-count="700" data-suffix="+">700+</strong><span>штолленов за сезон</span></p>
+      <p class="rise"><strong data-count="1001">1001</strong><span>отзыв и «Хорошее место»</span></p>
+    </section>
+    <section class="craft craft-line" data-animate>
+      <div class="craft-head rise">
+        <h2>Как тесто становится хлебом</h2>
+        <p>Полоса ниже — те самые 12 часов холода.</p>
+        <div class="clock-track" aria-hidden="true"><span></span></div>
+      </div>
+      <ol class="steps">
+        <li class="rise"><strong>Замес</strong><span>Дикие дрожжи и молочнокислые бактерии вместо промышленных.</span></li>
+        <li class="rise"><strong>Холод, от 12 часов</strong><span>Тесто ферментируется в холоде. Не торопим.</span></li>
+        <li class="rise"><strong>Масло</strong><span>Только качественное голландское, 82,5%. Без растительных жиров.</span></li>
+        <li class="rise"><strong>Руки</strong><span>Руки — и есть ремесло. Каждая булка немного своя.</span></li>
+      </ol>
+    </section>
+    <section class="life life-wide" data-life>
+      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+      <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
+      <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
+    </section>
+  </article>
+
+  <article class="home home-utro" data-home="utro" hidden>
+    <section class="morning">
+      <div>
+        <p class="eyebrow">Доброе утро · Сукромка, 5</p>
+        <h1>К утру хлеб<br>уже <em>ждёт.</em></h1>
+        <p class="lede">Мягкий, как первый кофе у окна. Закваска жила в холоде всю ночь, руки доделали остальное.</p>
+        <p class="hero-actions"><a class="btn" href="#/utro/catalog">Что сегодня тёплое</a></p>
+      </div>
+      <div class="polaroids">
+        <figure><img src="assets/cafe.jpg" alt="Утренний стол у окна, кофе и тишина"><figcaption>Стол у окна</figcaption></figure>
+        <figure>
+          <img src="assets/croissant.jpg" alt="Круассан на сливочном масле">
+          <figcaption>Голландское масло</figcaption>
+          <a class="seal" href="#/utro/preorder" aria-label="Открыт предзаказ новогодних штолленов, заказы до 20 декабря">
+            <svg class="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="seal-utro" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#seal-utro">ОТКРЫТ ПРЕДЗАКАЗ · ОТКРЫТ ПРЕДЗАКАЗ · </textPath></text></svg>
+            <span class="seal-core">до 20<br>декабря</span>
+          </a>
+        </figure>
+      </div>
+    </section>
+    <a class="preorder-bar" href="#/utro/preorder"><span>Открыт предзаказ новогодних штолленов</span><span>Заказы до 20 декабря</span></a>
+    <section class="stats stats-tiles" data-animate>
+      <p class="rise"><strong data-count="2020">2020</strong><span>год, когда открылись</span></p>
+      <p class="rise"><strong data-count="700" data-suffix="+">700+</strong><span>штолленов к новогоднему столу</span></p>
+      <p class="rise"><strong data-count="1001">1001</strong><span>тёплый отзыв и «Хорошее место»</span></p>
+    </section>
+    <section class="craft" data-animate>
+      <div class="craft-head rise">
+        <h2>Ночь, масло и ладонь</h2>
+        <p>Пока город спит, тесто уже работает.</p>
+        <div class="clock-track" aria-hidden="true"><span></span></div>
+      </div>
+      <div class="craft-grid">
+        <article class="rise"><p class="eyebrow">I · Закваска</p><h3>fermentum</h3><p>Дикие дрожжи и молочнокислые бактерии вместо промышленных. Тесто ферментируется в холоде от 12 часов.</p></article>
+        <article class="rise"><p class="eyebrow">II · Масло</p><h3>butyrum</h3><p>Работаем только на качественном голландском сливочном масле 82,5%. Без растительных жиров и консервантов.</p></article>
+        <article class="rise"><p class="eyebrow">III · Руки</p><h3>manus</h3><p>Руки — и есть ремесло. Тесто чувствует ладонь: где его сложить, где дать постоять, где остановиться. Поэтому каждая булка немного своя, и в этом её честность.</p></article>
+      </div>
+    </section>
+    <section class="life life-polaroid" data-life>
+      <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+      <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
+      <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
+    </section>
+    <section class="pick-block">
+      <div class="section-head"><h2>К завтраку</h2><a href="#/utro/catalog">Весь каталог</a></div>
+      <div class="picks" data-picks="croissant,cube,poppy,tart" data-layout="cards"></div>
+    </section>
+  </article>
+
+  <article class="home home-pismo" data-home="pismo" hidden>
+    <p class="letter-meta"><span>Мытищи, улица Сукромка, 5</span><a class="seal seal-inline" href="#/pismo/preorder" aria-label="Открыт предзаказ новогодних штолленов, заказы до 20 декабря">
+      <svg class="seal-ring" viewBox="0 0 120 120" aria-hidden="true"><defs><path id="seal-pismo" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs><text><textPath href="#seal-pismo">ОТКРЫТ ПРЕДЗАКАЗ · ОТКРЫТ ПРЕДЗАКАЗ · </textPath></text></svg>
+      <span class="seal-core">до 20<br>декабря</span>
+    </a></p>
+    <h1>Письмо<br>из пекарни</h1>
+    <p class="drop">Здравствуйте. Пишем мало, печём долго. Хлеб на закваске ночует в холоде от двенадцати часов: дикие дрожжи и молочнокислые бактерии вместо промышленных. Слоёное ведём только на качественном голландском масле, 82,5%, без растительных жиров и консервантов.</p>
+    <p>Руки — и есть ремесло. Тесто чувствует ладонь: где его сложить, где дать постоять, где остановиться. Поэтому каждая булка немного своя, и в этом её честность. Если хотите к столу в этом году штоллен, фруткейк или паннетоне — <a href="#/pismo/preorder">предзаказ открыт до 20 декабря</a>.</p>
+    <section class="stats stats-inline" data-animate>
+      <p class="rise"><strong data-count="2020">2020</strong><span>открылись</span></p>
+      <p class="rise"><strong data-count="700" data-suffix="+">700+</strong><span>штолленов за сезон</span></p>
+      <p class="rise"><strong data-count="1001">1001</strong><span>отзыв</span></p>
+    </section>
+    <h2>Что можно забрать сегодня</h2>
+    <div class="picks" data-picks="grech,nas,taiga,croissant,poppy,canele" data-layout="menu"></div>
+    <figure class="letter-photo"><img src="assets/loaf.jpg" alt="Нарезанный зерновой хлеб на деревянной доске"><figcaption>Жизнь пекарни — это доска, мука и окно, в которое уже светло.</figcaption></figure>
+    <blockquote class="letter-close">
+      <p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p>
+      <footer><span>Дмитрий Никитин</span> основатель</footer>
+    </blockquote>
+  </article>
+
+  <article class="home home-kadr cover" data-home="kadr" hidden>
+    <figure class="cover-photo">
+      <img src="assets/real/dark-loaf.jpg" alt="Хлеб на закваске в руках, на тёмном фоне">
+    </figure>
+    <div class="cover-copy cover-center">
+      <p class="eyebrow">Мытищи</p>
+      <h1>Хлеб, которым<br>делятся.</h1>
+      <a class="cover-link" href="#/kadr/catalog">В каталог</a>
+      <a class="cover-quiet" href="#/kadr/preorder">Предзаказ штолленов · до 20 декабря</a>
+    </div>
+  </article>
+
+  <article class="home home-bumaga cover" data-home="bumaga" hidden>
+    <figure class="cover-photo">
+      <img src="assets/fruit.jpg" alt="Круглый хлеб с мучной шапкой на крафтовой бумаге">
+    </figure>
+    <div class="cover-copy cover-top">
+      <p class="eyebrow">Сукромка, 5</p>
+      <h1>Печём долго.<br>Кладём на стол.</h1>
+      <a class="cover-link" href="#/bumaga/catalog">В каталог</a>
+      <a class="cover-quiet" href="#/bumaga/preorder">Предзаказ штолленов · до 20 декабря</a>
+    </div>
+  </article>
+
+  <article class="home home-muka cover" data-home="muka" hidden>
+    <figure class="cover-photo">
+      <img src="assets/croissant.jpg" alt="Круассаны, над которыми сыплется мука">
+    </figure>
+    <div class="cover-copy cover-side">
+      <p class="eyebrow">Слоёное</p>
+      <h1>Только<br>сливочное<br>масло.</h1>
+      <a class="cover-link" href="#/muka/catalog">В каталог</a>
+      <a class="cover-quiet" href="#/muka/preorder">Предзаказ штолленов · до 20 декабря</a>
+    </div>
+  </article>
+
+  <article class="home home-polya cover" data-home="polya" hidden>
+    <figure class="cover-photo">
+      <img src="assets/loaf.jpg" alt="Нарезанный зерновой хлеб на деревянной доске">
+    </figure>
+    <div class="cover-caption">
+      <h1>Нарезали к столу.</h1>
+      <p>
+        <a class="cover-link" href="#/polya/catalog">В каталог</a>
+        <a class="cover-quiet" href="#/polya/preorder">Предзаказ до 20 декабря</a>
+      </p>
+    </div>
+  </article>
+
+  <article class="home home-long home-kadrlong" data-home="kadrlong" hidden>
+    <div class="long-hero">
+      <figure class="cover-photo">
+        <img src="assets/real/dark-loaf.jpg" alt="Хлеб на закваске в руках, на тёмном фоне">
+      </figure>
+      <div class="cover-copy cover-center">
+        <p class="eyebrow">Мытищи</p>
+        <h1>Хлеб, которым<br>делятся.</h1>
+        <button type="button" class="cover-link" data-scroll="kadr-next">Дальше, к каталогу</button>
+      </div>
+    </div>
+    <div class="long-body" id="kadr-next">
+      <section class="pick-block">
+        <div class="section-head"><h2>Каталог</h2><a href="#/kadrlong/catalog">Все позиции</a></div>
+        <div class="picks" data-picks="grech,nas,taiga,croissant,poppy,cube,canele,cheese" data-layout="cards"></div>
+      </section>
+      <section class="craft">
+        <h2>Как печём</h2>
+        <div class="craft-grid">
+          <article><h3>Закваска</h3><p>Дикие дрожжи и молочнокислые бактерии. Тесто ферментируется в холоде от 12 часов.</p></article>
+          <article><h3>Масло</h3><p>Слоёное — только на качественном голландском сливочном масле 82,5%. Без растительных жиров и консервантов.</p></article>
+          <article><h3>Руки</h3><p>Руки — и есть ремесло. Тесто чувствует ладонь, поэтому каждая булка немного своя.</p></article>
+        </div>
+      </section>
+      <section class="life" data-life>
+        <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+        <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
+        <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
+      </section>
+      <figure class="quote quote-person">
+        <img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель">
+        <blockquote><p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p></blockquote>
+        <figcaption><span>Дмитрий Никитин</span> основатель</figcaption>
+      </figure>
+      <p class="hours"><span>Пн–пт 8:00–21:00</span><span>Сб 9:00–21:00</span><span>Вс 8:00–21:00</span></p>
+    </div>
+  </article>
+
+  <article class="home home-long home-mukalong" data-home="mukalong" hidden>
+    <div class="long-hero">
+      <figure class="cover-photo">
+        <img src="assets/real/dark-cube.png" alt="Слоёный куб в разрезе на тёмном фоне">
+      </figure>
+      <div class="cover-copy cover-side">
+        <p class="eyebrow">Слоёное</p>
+        <h1>Только<br>сливочное<br>масло.</h1>
+        <button type="button" class="cover-link" data-scroll="muka-next">Дальше, к каталогу</button>
+      </div>
+    </div>
+    <div class="long-body" id="muka-next">
+      <section class="pick-block">
+        <div class="section-head"><h2>С полки</h2><a href="#/mukalong/catalog">Весь каталог</a></div>
+        <div class="picks" data-picks="croissant,cube,poppy,canele,tart,cheese,grech,taiga" data-layout="cards"></div>
+      </section>
+      <section class="life" data-life>
+        <div class="life-head"><h2>Жизнь пекарни</h2><div class="life-controls"><button type="button" class="life-prev" aria-label="Предыдущее фото">←</button><button type="button" class="life-next" aria-label="Следующее фото">→</button><button type="button" class="life-pause" aria-pressed="false">Пауза</button></div></div>
+        <figure class="life-frame"><img alt=""><figcaption></figcaption></figure>
+        <div class="life-dots" role="tablist" aria-label="Фотографии пекарни"></div>
+      </section>
+      <figure class="quote quote-person">
+        <img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель">
+        <blockquote><p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p></blockquote>
+        <figcaption><span>Дмитрий Никитин</span> основатель</figcaption>
+      </figure>
+    </div>
+  </article>
+
+  <article class="page" id="page-catalog" hidden>
+    <header class="page-head">
+      <h1>Каталог</h1>
+      <p>Соберите заказ и заберите его в одной из пекарен. Вес ремесленной продукции может отличаться на 5–10%.</p>
+    </header>
+    <div class="filters" id="filters" role="tablist" aria-label="Разделы каталога"></div>
+    <figure class="banner">
+      <img src="assets/real/racks.jpg" alt="Стеллажи с хлебом на закваске">
+      <figcaption><span>Отпекаем с 5 утра</span><strong>Хлеб на закваске</strong></figcaption>
+    </figure>
+    <div class="cards" id="catalog-grid"></div>
+  </article>
+
+  <article class="page" id="page-food" hidden>
+    <header class="page-head">
+      <h1>Еда</h1>
+      <p>Меню кофейни на улице Сукромка, 5. Сначала список, справа — фотографии блюд: их можно листать.</p>
+    </header>
+    <div class="filters" id="foodTabs" role="tablist" aria-label="Разделы меню"></div>
+    <div class="food-layout">
+      <div id="foodList"></div>
+      <figure class="food-stage">
+        <img id="foodPhoto" alt="">
+        <figcaption id="foodCap"></figcaption>
+        <div class="food-arrows">
+          <button type="button" id="foodPrev" aria-label="Предыдущее блюдо">←</button>
+          <button type="button" id="foodNext" aria-label="Следующее блюдо">→</button>
+        </div>
+      </figure>
+    </div>
+  </article>
+
+  <article class="page" id="page-about" hidden>
+    <header class="page-head">
+      <h1>О пекарне</h1>
+      <p>Первая и домашняя ремесленная пекарня Мытищ. С 2020 года печём хлеб на закваске, слоёное и то, что хочется поставить на середину стола.</p>
+    </header>
+    <div class="about-grid">
+      <figure><img src="assets/real/slice.jpg" alt="Тёмный хлеб в разрезе, с семенами и сухофруктами"></figure>
+      <div>
+        <p>Мы не ускоряем то, чему нужно время. Дикие дрожжи и молочнокислые бактерии вместо промышленных. Тесто ферментируется в холоде от 12 часов.</p>
+        <p>Слоёное — только на качественном голландском сливочном масле 82,5%. Без растительных жиров и консервантов.</p>
+        <p>Руки — и есть ремесло. Тесто чувствует ладонь, поэтому партии немного отличаются. Так и должно быть, когда хлеб живой.</p>
+      </div>
+    </div>
+    <section class="stats" data-animate>
+      <p class="rise"><strong data-count="2020">2020</strong><span>год открытия первой пекарни</span></p>
+      <p class="rise"><strong data-count="700" data-suffix="+">700+</strong><span>штолленов на новогодних столах за сезон</span></p>
+      <p class="rise"><strong data-count="1001">1001</strong><span>отзыв на Яндекс Картах, награда «Хорошее место»</span></p>
+    </section>
+  </article>
+
+  <article class="page" id="page-business" hidden>
+    <header class="page-head">
+      <h1>Для бизнеса</h1>
+      <p>Оптовым гостям — отдельная дверь. Кофейням, магазинам и офисам. На главной мы об этом не рассказываем: там стол для своих. Прайс от 10 августа отдаём менеджеру в Telegram — на витрине розница.</p>
+    </header>
+    <div class="split">
+      <div>
+        <h2>Как это устроено</h2>
+        <ol class="plain">
+          <li>Коротко пишете, что нужно и как часто.</li>
+          <li>Собираем пробную партию хлеба или слоёного.</li>
+          <li>Договариваемся о ритме: утро Сукромки или Новомытищинского.</li>
+        </ol>
+        <p class="fine">Отвечаем в рабочий день. Это макет: заявка остаётся в браузере и никуда не отправляется.</p>
+      </div>
+      <form id="bizForm" class="form" novalidate>
+        <label>Имя <input name="name" required autocomplete="name"></label>
+        <label>Заведение <input name="place" required></label>
+        <label>Телефон <input name="phone" required inputmode="tel" autocomplete="tel"></label>
+        <label>Что нужно <textarea name="note" rows="4" required></textarea></label>
+        <p class="form-error" id="bizError" role="alert" hidden></p>
+        <button class="btn" type="submit">Отправить заявку</button>
+        <p class="form-ok" id="bizOk" hidden>Заявка собрана в макете. Мы её никуда не отправили — так и задумано, пока сайт концепция.</p>
+      </form>
+    </div>
+  </article>
+
+  <article class="page" id="page-contacts" hidden>
+    <header class="page-head">
+      <h1>Контакты</h1>
+      <p>Две пекарни в Мытищах. Звоните, пишите в Telegram или просто приходите к тёплой полке.</p>
+    </header>
+    <div class="addr-grid">
+      <address>
+        <span class="eyebrow">Сукромка</span>
+        <strong>улица Сукромка, 5</strong>
+        <a href="tel:+79852270561">+7 (985) 227-05-61</a>
+        <a href="https://yandex.ru/maps/org/mezhdu_nami_bulochkami/242275659136/" target="_blank" rel="noopener">Открыть на Яндекс Картах</a>
+      </address>
+      <address>
+        <span class="eyebrow">Новомытищинский</span>
+        <strong>проспект, 64к1</strong>
+        <a href="tel:+79852270563">+7 (985) 227-05-63</a>
+        <a href="https://t.me/menabu_bakery" target="_blank" rel="noopener">Telegram пекарни</a>
+      </address>
+    </div>
+    <p class="hours"><span>Пн–пт 8:00–21:00</span><span>Сб 9:00–21:00</span><span>Вс 8:00–21:00</span></p>
+    <figure class="quote quote-person" id="quote">
+      <img src="assets/real/founder.jpg" alt="Дмитрий Никитин, основатель">
+      <blockquote>
+        <p>Хотелось места, куда приходят не по делу, а друг к другу. Хлеб, который делят за одним столом, — это тихое доверие: на всех, кто сел рядом. Так было у наших бабушек. Так есть у нас. Так и останется.</p>
+      </blockquote>
+      <figcaption><span>Дмитрий Никитин</span> основатель</figcaption>
+    </figure>
+  </article>
+
+  <article class="page" id="page-preorder" hidden>
+    <header class="page-head">
+      <p class="eyebrow">Сезон · до 20 декабря</p>
+      <h1>Предзаказ новогоднего стола</h1>
+      <p>Штоллен, фруткейк и паннетоне. Ассортимент на этой странице меняется дважды в год. К Пасхе здесь будут паннетоне, кулич и творожная пасха.</p>
+    </header>
+    <p class="fine photo-note">На концепции стоят фото близкие по настроению. В финальном сайте их сменят ваши штоллены.</p>
+    <div class="cards" id="season-grid"></div>
+    <form id="payForm" class="form pay-form" novalidate>
+      <h2>Заказать и оплатить</h2>
+      <p id="payEmpty" class="fine">Сначала выберите граммовку и нажмите «В предзаказ».</p>
+      <ul id="payLines"></ul>
+      <p class="pay-total">Итого <strong id="payTotal">0 ₽</strong></p>
+      <div class="form-grid">
+        <label>Имя <input name="name" required autocomplete="name"></label>
+        <label>Телефон <input name="phone" required inputmode="tel" autocomplete="tel"></label>
+        <label>Где заберёте
+          <select name="shop" required>
+            <option value="">Выберите пекарню</option>
+            <option>Сукромка, 5</option>
+            <option>Новомытищинский проспект, 64к1</option>
+          </select>
+        </label>
+        <label>Комментарий <input name="note" autocomplete="off"></label>
+        <label>Номер карты <input name="card" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000" required></label>
+        <label>Срок <input name="exp" inputmode="numeric" autocomplete="off" placeholder="ММ/ГГ" required></label>
+        <label>Код <input name="cvc" inputmode="numeric" autocomplete="off" placeholder="000" required></label>
+      </div>
+      <p class="form-error" id="payError" role="alert" hidden></p>
+      <button class="btn" type="submit">Оплатить предзаказ</button>
+      <p class="fine">Макет оплаты: номер карты не сохраняется и не отправляется. Деньги не списываются.</p>
+      <p class="form-ok" id="payOk" hidden></p>
+    </form>
+  </article>
+</main>
+
+<footer class="foot" id="foot" hidden>
+  <a class="logo foot-logo" id="footLogo" href="#/kadr">
+    <img class="logo-img" src="assets/real/logo-short.png" alt="Булочками">
+  </a>
+  <p>ул. Сукромка, 5 · +7 (985) 227-05-61<br>Новомытищинский пр-т, 64к1 · +7 (985) 227-05-63</p>
+  <p><a href="https://t.me/menabu_bakery" target="_blank" rel="noopener">Telegram</a></p>
+</footer>
+
+<nav class="switcher" id="switcher" hidden aria-label="Все варианты">
+  <a href="#/board">Все</a>
+  <a href="#/stol" data-switch="stol">Стол</a>
+  <a href="#/polka" data-switch="polka">Полка</a>
+  <a href="#/utro" data-switch="utro">Утро</a>
+  <a href="#/pismo" data-switch="pismo">Письмо</a>
+  <a href="#/kadr" data-switch="kadr">Кадр</a>
+  <a href="#/bumaga" data-switch="bumaga">Бумага</a>
+  <a href="#/muka" data-switch="muka">Мука</a>
+  <a href="#/polya" data-switch="polya">Поля</a>
+  <a href="#/kadrlong" data-switch="kadrlong">Кадр · страница</a>
+  <a href="#/mukalong" data-switch="mukalong">Мука · страница</a>
+</nav>
+
+<div class="scrim" id="scrim" hidden></div>
+<aside class="cart" id="cart" role="dialog" aria-modal="true" aria-labelledby="cartTitle" hidden>
+  <div class="cart-head">
+    <h2 id="cartTitle">Корзина</h2>
+    <button type="button" id="cartClose" aria-label="Закрыть корзину">Закрыть</button>
+  </div>
+  <div id="cartBody"></div>
+  <form id="cartForm" class="form" hidden novalidate>
+    <label>Имя <input name="name" required autocomplete="name"></label>
+    <label>Телефон <input name="phone" required inputmode="tel" autocomplete="tel"></label>
+    <label>Пекарня
+      <select name="shop" required>
+        <option value="">Выберите</option>
+        <option>Сукромка, 5</option>
+        <option>Новомытищинский проспект, 64к1</option>
+      </select>
+    </label>
+    <p class="form-error" id="cartError" role="alert" hidden></p>
+    <button class="btn" type="submit">Забронировать самовывоз</button>
+    <p class="fine">Оплата при получении. Макет: заявка никуда не отправляется.</p>
+    <p class="form-ok" id="cartOk" hidden>Бронь собрана в макете. Хлеб вас подождёт — на настоящем сайте здесь будет сообщение от пекарни.</p>
+  </form>
+</aside>
+
+<script src="js/food.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
